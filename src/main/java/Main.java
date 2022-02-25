@@ -9,8 +9,8 @@ public class Main {
 
         ZooAnimal[] animal = ZooAnimal.values();
         System.out.println("В наше зоопарке живут ");
-        for (int i = 0; i < animal.length; i++) {
-            System.out.println(animal[i].getNum() +"-" + animal[i].getNameRus());
+        for (ZooAnimal zooAnimal : animal) {
+            System.out.println(zooAnimal.getNum() + "-" + zooAnimal.getNameRus());
         }
 
             System.out.println("Введите номер ");
