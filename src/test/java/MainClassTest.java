@@ -1,10 +1,9 @@
-import com.sun.source.tree.AssertTree;
-import org.testng.Assert;
+
 
 import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.testng.Assert.assertEquals;
+
 
 public class MainClassTest {
 
