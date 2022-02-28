@@ -2,7 +2,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
+
 
 public class PumaTest {
     @Test
@@ -15,6 +17,11 @@ public class PumaTest {
     public void CatsGrowlsTest(){
         String result = Growls.catsGrowls;
         assertEquals(result,"рычать.");
+    }
+    @Test
+    public void HaveFeetTest(){
+        int feetPuma = Puma.feet;
+        assertNotEquals(feetPuma,3,String.format("Puma lost 1 feet"));
     }
 
 }

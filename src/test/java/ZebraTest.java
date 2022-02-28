@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertFalse;
+
+import static org.testng.Assert.*;
 
 
 public class ZebraTest {
@@ -30,6 +30,12 @@ public class ZebraTest {
         int result = Zebra.hooves;
         int expectedHooves = new Zebra().Hooves();
             assertEquals(result,expectedHooves,String.format("Зебра",result,expectedHooves));
+    }
+        @Test
+    public void zebraGrowlsTest(){
+        String grows = Zebra.zebraGrows;
+        boolean result = grows.contains("мяукает");
+        assertTrue(result,String.format("zebra not мяукает ",result));
     }
 }
 
