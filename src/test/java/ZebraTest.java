@@ -1,10 +1,12 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.assertFalse;
+
 
 public class ZebraTest {
     ZooAnimal[] animal = ZooAnimal.values();
+
 
     @Test
     public void FoodZebraTest() {
@@ -16,13 +18,18 @@ public class ZebraTest {
             }
         }
     }
+    @Test
+    public void FoodnoZebraTest(){
+        String noZebra = Food.food_covenfooter;
+        boolean result = noZebra.contains("мясо");
+        assertFalse(result);
+    }
 
         @Test
     public void HoovesZebraTest(){
         int result = Zebra.hooves;
         int expectedHooves = new Zebra().Hooves();
-
-            assertEquals(result,expectedHooves);
+            assertEquals(result,expectedHooves,String.format("Зебра",result,expectedHooves));
     }
-    }
+}
 
