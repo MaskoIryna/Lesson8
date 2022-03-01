@@ -1,6 +1,4 @@
-//import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import static org.testng.Assert.*;
 
 
@@ -11,7 +9,7 @@ public class ZebraTest {
     @Test(groups = {"positive"})
     public void FoodZebraTest() {
         for (ZooAnimal zooAnimal : animal) {
-            if (zooAnimal.getNameRus() == "зебра"){
+            if (zooAnimal.getNameRus().contains("зебра")){
                 String result = new Zebra().Food();
                 String expectedFood  = Food.food_covenfooter;
                 assertEquals(result,expectedFood,String.format(result,expectedFood));
@@ -35,7 +33,7 @@ public class ZebraTest {
     public void zebraGrowlsTest(){
         String grows = Zebra.zebraGrows;
         boolean result = grows.contains("мяукает");
-        assertTrue(result,String.format("zebra not мяукает ",result));
+            assertTrue(result,String.format("zebra not мяукает ",result));
     }
 }
 

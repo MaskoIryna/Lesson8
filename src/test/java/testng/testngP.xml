@@ -11,7 +11,10 @@
          <classes>
              <class name="ZebraTest"/>
              <class name="PumaTest"/>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0bf8451 (rename testng)
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

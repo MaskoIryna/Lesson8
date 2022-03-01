@@ -6,8 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-        ZooAnimal[] animal = ZooAnimal.values();
+         ZooAnimal[] animal = ZooAnimal.values();
         System.out.println("В наше зоопарке живут ");
         for (ZooAnimal zooAnimal : animal) {
             System.out.println(zooAnimal.getNum() + "-" + zooAnimal.getNameRus());
@@ -57,4 +56,5 @@ public class Main {
             }
         }
     }
+
 }

@@ -5,12 +5,11 @@
     <test name="Tests">
         <groups>
             <run>
-                <include name="negative" />
+                <include name="positive" />
             </run>
         </groups>
          <classes>
-             <class name="ZebraTest"/>
-             <class name="PumaTest"/>
-        </classes>
+             <class name="MainClassTest"/>
+         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->
