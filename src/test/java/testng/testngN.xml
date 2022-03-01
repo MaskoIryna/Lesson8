@@ -3,9 +3,15 @@
 
 <suite name="Practice Suite" parallel="true" thread-count="1">
     <test name="Tests">
-        <classes>
-            <class name="ZebraTest"/>
-            <class name="PumaTest"/>
+        <groups>
+            <run>
+                <include name="negative" />
+            </run>
+        </groups>
+         <classes>
+             <class name="ZebraTest"/>
+             <class name="PumaTest"/>
+
         </classes>
     </test> <!-- Test -->
 </suite> <!-- Suite -->

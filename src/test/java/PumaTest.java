@@ -7,21 +7,21 @@ import static org.testng.Assert.assertTrue;
 
 
 public class PumaTest {
-    @Test
+    @Test(groups = "positive")
     public void FoodPumaTest(){
         String foodCats = Puma.food_cats;
         boolean result = foodCats.contains("мясо");
         assertTrue(result,foodCats);
     }
-    @Test
+    @Test(groups = "positive")
     public void CatsGrowlsTest(){
         String result = Growls.catsGrowls;
         assertEquals(result,"рычать.");
     }
-    @Test
+    @Test(groups = "negative")
     public void HaveFeetTest(){
         int feetPuma = Puma.feet;
-        assertNotEquals(feetPuma,3,String.format("Puma lost 1 feet"));
+        assertEquals(feetPuma,3,String.format("Puma lost 1 feet"));
     }
 
 }
