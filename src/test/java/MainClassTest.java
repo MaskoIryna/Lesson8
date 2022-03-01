@@ -1,5 +1,7 @@
 import org.testng.annotations.Test;
-import static org.testng.internal.junit.ArrayAsserts.assertArrayEquals;
+import static org.testng.Assert.assertEquals;
+
+
 
 
 public class MainClassTest {
@@ -14,7 +16,7 @@ public class MainClassTest {
             int i = zooAnimal.getNum() - 1;
             result[i] = nameRus;
         }
-        assertArrayEquals(animalAll,result);
+        assertEquals(animalAll,result);
     }
 }
 
