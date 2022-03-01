@@ -1,16 +1,15 @@
 import java.util.Scanner;
-//Branch_Test1
+
 
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-
-        ZooAnimal[] animal = ZooAnimal.values();
+         ZooAnimal[] animal = ZooAnimal.values();
         System.out.println("В наше зоопарке живут ");
-        for (int i = 0; i < animal.length; i++) {
-            System.out.println(animal[i].getNum() +"-" + animal[i].getNameRus());
+        for (ZooAnimal zooAnimal : animal) {
+            System.out.println(zooAnimal.getNum() + "-" + zooAnimal.getNameRus());
         }
 
             System.out.println("Введите номер ");
@@ -57,4 +56,5 @@ public class Main {
             }
         }
     }
+
 }
