@@ -1,9 +1,6 @@
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
-
-
-
 public class MainClassTest {
 
     @Test(groups = {"positive"})
